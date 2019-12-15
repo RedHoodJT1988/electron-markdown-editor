@@ -1,0 +1,21 @@
+{
+  "name": "markdown-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=true & electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.5",
+    "electron-builder": "^21.2.0",
+    "electron-updater": "^4.2.0"
+  },
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  }
+}
