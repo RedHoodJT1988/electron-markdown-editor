@@ -1,14 +1,25 @@
 {
   "name": "markdown-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Markdown Editor tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set DEBUG=true & electron ."
+    "start": "set DEBUG=true & electron .",
+    "build:windows": "electron-builder --win --dir",
+    "dist:windows": "electron-builder --win",
+    "publish": "build --win -p always"
   },
-  "keywords": [],
-  "author": "",
+  "build": {
+    "appId": "com.my.markdown-editor",
+    "publish": {
+      "provider": "github",
+      "owner": "RedHoodJT1988",
+      "repo": "electron-markdown-editor"
+    }
+  },
+  "keywords": ["Electron", "Markdown"],
+  "author": "Jonathan Reeves",
   "license": "ISC",
   "devDependencies": {
     "electron": "^7.1.5",
